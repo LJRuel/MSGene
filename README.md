@@ -24,7 +24,7 @@ The column names are described in [ukbpheno](https://github.com/niekverw/ukbphen
 
 * **cad.prs** : scaled N(0,1) coronary artery disease PRS, as available in ukbshowcase field 26202 through 26289 and described [here](https://biobank.ndph.ox.ac.uk/showcase/label.cgi?id=301).
 * **f.31.0.0**: sex (male/female, 1/0)
-* **Trait_0_Any**: binary indicator for case (2) or control status (0)
+* **Trait_0_Any**: binary indicator for case (2) or control status (1)
 * **Trait_0_censor_age**: minimum age of first diagnosis, last censored, or death (whichever comes first)
 * **statin/antihtn**: binary indicator of medication use
 * **statin_age/htn_age**: NA (age) if never using/age of first prescription

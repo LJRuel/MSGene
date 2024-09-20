@@ -355,10 +355,10 @@ display: none;
 <div id="msgene" class="section level2">
 <h2>MSGene</h2>
 <ul>
-<li>R package for multistate modeling</li>
+<li>Multistate modeling</li>
 </ul>
-<p>Welcome to our package for estimating lifetime probabilities iterated
-over a multistate model!!</p>
+<p>Welcome to our implementation for estimating lifetime probabilities
+iterated over a multistate model!!</p>
 <p>This repository contains codes for implementing MSGene, a framework
 for dynamic risk modelling of coronary artery disease using genetic risk
 and the electronic health record with multistate modelling. Detailed
@@ -381,6 +381,26 @@ Urbut et al. </p>
 Here, field f.31.0.0 represents the sex indicator from the UKB. UK
 Biobank is open to all researchers with appropriate credentials and IRB
 approval, <a href="https://www.ukbiobank.ac.uk">UK Biobank</a>.</p>
+<div id="column-names" class="section level4">
+<h4>Column names</h4>
+<p>The column names are described in <a href="https://github.com/niekverw/ukbpheno/tree/master">ukbpheno</a> and
+below the as follows:</p>
+<ul>
+<li><strong>cad.prs</strong> : scaled N(0,1) coronary artery disease
+PRS, as available in ukbshowcase field 26202 through 26289 and described
+<a href="https://biobank.ndph.ox.ac.uk/showcase/label.cgi?id=301">here</a>.</li>
+<li><strong>f.31.0.0</strong>: sex (male/female, 1/0)</li>
+<li><strong>Trait_0_Any</strong>: binary indicator for case (2) or
+control status (1)</li>
+<li><strong>Trait_0_censor_age</strong>: minimum age of first diagnosis,
+last censored, or death (whichever comes first)</li>
+<li><strong>statin/antihtn</strong>: binary indicator of medication
+use</li>
+<li><strong>statin_age/htn_age</strong>: NA (age) if never using/age of
+first prescription</li>
+<li><strong>smoke</strong>git : smoking status at baseline</li>
+</ul>
+</div>
 </div>
 <div id="load-the-sample-data" class="section level1">
 <h1>Load the sample data</h1>
